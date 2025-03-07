@@ -1,11 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> group 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        div .cards:hover {
+            background-color: rgba(0, 0, 0, 0.37);
+            color: aliceblue;
+            border-radius: 15px;
+
+
+        }
+
+        .drapou:hover {
+            transform: scale(1.1);
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s linear;
+
+        }
+
+        .dropdown-menu li .drop:hover {
+            background-color: rgb(108, 165, 42);
+        }
+
+        div .tiran:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- hada nav bar -->
+    <div class="top-bar" style=" transition: top 0.3s; position: relative; top: -25px; ">
+        <nav class="navbar navbar-expand-lg  bg-success" style="position: fixed; width: 100%; z-index: 1500;">
+            <div>
+                <img src="emage/cup2.png" alt="">
+            </div>
+            <div class="container-fluid  ">
+                <a class="navbar-brand text-light" href="#" style="font-size: 25px;">DirNia25</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mx-4 mb-2 mb-lg-0">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link text-light" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown mx-4">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Les group
+                            </a>
+                            <ul class="dropdown-menu" style="background-image: url(emage/green4.webp);">
+                                <li><a class="drop dropdown-item text-light" href="group1.html">group 1</a></li>
+                                <li><a class="drop dropdown-item" href="group2.html" style="color: whitesmoke;">group
+                                        2</a></li>
+                                <li><a class="drop dropdown-item" href="group3.html"
+                                        style="color: rgb(255, 255, 255);">group 3</a></li>
+                                <li><a class="drop dropdown-item" href="group4.html" style="color: whitesmoke;">group
+                                        4</a></li>
+                                <li><a class="drop dropdown-item" href="group5.html" style="color: whitesmoke;">group
+                                        5</a></li>
+                                <li><a class="drop dropdown-item" href="group6.html" style="color: whitesmoke;">group
+                                        6</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="drop dropdown-item text-light" href="index.html">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn btn-light" type="submit" style="width: 120px;">Search</button>
+
+                </div>
+            </div>
+        </nav>
+        <!-- </div> hado les cards -->
+
+        <div class="container mt-4" style="position: relative; top: 100px;">
+            <div
+                style="border: 2px solid black; padding: 30px; background-image: url(emage/back-group.jpg); box-shadow: 0 0 10px green;">
+                <div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <h2>Time 01:30</h1>
+                            <a href="https://www.bladi.net/img/logo/arton51227.jpg" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2"><img class="tiran" src="emage/mal3ab.png" alt=""
+                                    style="position: relative; top: -30px; left: 30px;"></a>
+                    </div>
+                    <h1 style="border: 2px solid black; text-align: center; border-radius: 15px;">MLI: <span
+                            style="color: whitesmoke; background-color: black;">0</span> <span
+                            style="color: whitesmoke; background-color: black;">0</span> :ZAM
+                    </h1>
+                </div>
+                <div class="row ">
+                    <div class="col-md-4">
+                        <div class="w-100 cards"
+                            style="border: 2px solid black; border-radius: 15px; padding: 50px; box-shadow: 0 0 20px rgb(0, 0, 0); ">
+                            <!-- card 1 -->
+                            <div class="d-flex">
+                                <img src="emage/P 1.jpg" alt="" style="width: 55%;">
+                                <div class="mx-4 w-100">
+                                    <h2 style="width: 100px;">Mali</h2>
+                                    <p>Lorem ipsum dolor sit <br> amet consectetur.</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 mx-1">
+                                <a href="#" class="btn btn-success mx-3" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">Le plan <img style="height: 25px;"
+                                        src="emage/chemise.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hadi hiya toph lifiha Vs -->
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img class="w-75" src="emage/vs 2.webp" alt="">
+                    </div>
+
+                    <!-- card 2 -->
+
+                    <div class="col-md-4">
+                        <div class="w-100 cards"
+                            style="border: 2px solid black; border-radius: 15px; padding: 50px;  box-shadow: 0 0 20px rgb(0, 0, 0);">
+                            <div class="d-flex">
+                                <img src="emage/P 2.jpg" alt="" style="width: 55%; ">
+                                <div class="mx-4">
+                                    <h2 style="width: 100px;">Zambie</h2>
+                                    <p>Lorem ipsum dolor sit <br> amet consectetur.</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 mx-1">
+                                <a href="#" class="btn btn-success mx-3" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Le plan <img style="height: 25px;"
+                                        src="emage/chemise.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success mt-4" style="box-shadow: 0 0 5px rgb(0, 255, 42);"
+                        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                        aria-controls="collapseExample"><img src="emage/billets.png" alt=""> <span
+                            style="font-size: 20PX;">BILLETS</span> 200DH</button>
+
+                    <!-- hadi hiya chiraa tadakir khdmnaha b Collapse -->
+                    <div class="collapse" id="collapseExample">
+
+                        <div class="container" style="background-image: url(emage/back-chop.jpg);">
+                            <h1 class="text-center">payez billts</h1>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md">
+                                        <div class="form-group">
+                                            <label for="ticketQuantity">number des billts</label>
+                                            <input type="number" class="form-control" id="ticketQuantity" min="1"
+                                                max="100" value="1" name="billets">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md">
+                                        <div class="form-group">
+                                            <label for="accountNumber">num-de
+                                                compts</label>
+                                            <input type="text" class="form-control" id="accountNumber" required
+                                                name="compts" placeholder="entre num de compts 💳 ">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">motpass</label>
+                                    <input type="password" class="form-control" id="password" required
+                                        placeholder="entre le motpasse">
+                                </div>
+                                <div style="position: relative; display: flex; justify-content: center;">
+                                    <button type="submit" class="btn btn-success btn-block mt-4 w-25">payez 💳</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- hadi hiya lmajmo3a tanya -->
+
+            <div class="container mt-4" style="position: relative; top: 100px;">
+                <div
+                    style="border: 2px solid black; padding: 30px; background-image: url(emage/back-group.jpg); box-shadow: 0 0 10px green;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <h2>Time 01:30</h1>
+                                <a href="https://www.bladi.net/img/logo/arton51227.jpg" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3"><img class="tiran" src="emage/mal3ab.png" alt=""
+                                        style="position: relative; top: -30px; left: 30px;"></a>
+                        </div>
+                        <h1 style="border: 2px solid black; text-align: center; border-radius: 15px;">MAR: <span
+                                style="color: whitesmoke; background-color: black;">0</span> <span
+                                style="color: whitesmoke; background-color: black;">0</span> :COM
+                        </h1>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <div class="w-100 cards"
+                                style="border: 2px solid black; border-radius: 15px; padding: 50px; box-shadow: 0 0 20px rgb(0, 0, 0); ">
+                                <!-- card 1 -->
+                                <div class="d-flex">
+                                    <img src="emage/morocoo 1.png" alt="" style="width: 55%;">
+                                    <div class="mx-4 w-100">
+                                        <h2 style="width: 100px;">Maroc</h2>
+                                        <p>Lorem ipsum dolor sit <br> amet consectetur.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 mx-1">
+                                    <a href="#" class="btn btn-success mx-3" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal1">Le plan <img style="height: 25px;"
+                                            src="emage/chemise.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- hadi hiya toph lifiha Vs -->
+                        <div class="col-md-4 d-flex justify-content-center">
+                            <img class="w-75" src="emage/vs 2.webp" alt="">
+                        </div>
+
+                        <!-- card 2 -->
+
+                        <div class="col-md-4">
+                            <div class="w-100 cards"
+                                style="border: 2px solid black; border-radius: 15px; padding: 50px;  box-shadow: 0 0 20px rgb(0, 0, 0);">
+                                <div class="d-flex">
+                                    <img src="emage/p 3.jpeg" alt="" style="width: 55%; ">
+                                    <div class="mx-4">
+                                        <h2 style="width: 100px;">Comores</h2>
+                                        <p>Lorem ipsum dolor sit <br> amet consectetur.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 mx-1">
+                                    <a href="#" class="btn btn-success mx-3" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Le plan <img style="height: 25px;"
+                                            src="emage/chemise.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-success mt-4" style="box-shadow: 0 0 5px rgb(0, 255, 42);"
+                            data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false"
+                            aria-controls="collapseExample1"><img src="emage/billets.png" alt=""> <span
+                                style="font-size: 20PX;">BILLETS</span> 200DH</button>
+
+                        <!-- hadi hiya chiraa tadakir khdmnaha b Collapse -->
+                        <div class="collapse" id="collapseExample1">
+
+                            <div class="container" style="background-image: url(emage/back-chop.jpg);">
+                                <h1 class="text-center">payez billts</h1>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md">
+                                            <div class="form-group">
+                                                <label for="ticketQuantity">number des billts</label>
+                                                <input type="number" class="form-control" id="ticketQuantity" min="1"
+                                                    max="100" value="1" name="billets">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md">
+                                            <div class="form-group">
+                                                <label for="accountNumber">num-de
+                                                    compts</label>
+                                                <input type="text" class="form-control" id="accountNumber" required
+                                                    name="compts" placeholder="entre num de compts 💳 ">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">motpass</label>
+                                        <input type="password" class="form-control" id="password" required
+                                            placeholder="entre le motpasse">
+                                    </div>
+                                    <div style="position: relative; display: flex; justify-content: center;">
+                                        <button type="submit" class="btn btn-success btn-block mt-4 w-25">payez
+                                            💳</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- hada lfooter -->
+        <!-- border-top-left-radius: 50% 20%; border-top-right-radius: 50% 20%   hadi bach ikon lfooter momawj -->
+
+        <footer class="bg-success text-light mt-5 py-4"
+            style="position: relative; border-top-left-radius: 50% 20%; border-top-right-radius: 50% 20%; top: 200px;">
+            <!-- hada logo dyal ka2s ifri9ya -->
+            <div class=" position-relative">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <h5>Football Maroc</h5>
+                        <p>Suivez les dernières nouvelles et mises à jour sur le football au Maroc et à travers
+                            l'Afrique.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <!-- haso ay9onat -->
+                        <h5>Suivez-nous</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="https://www.facebook.com/people/TA-KI-%C4%90p/pfbid02jQPVNednw9qgtBoWFvtxcEgFYxVmBAqTsrxSd7W23qwK86RrbVhMtKyg6jZ9ewZbl/"
+                                    class="text-white text-decoration-none d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-facebook fa-2x me-2"></i> Facebook
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://x.com/"
+                                    class="text-white text-decoration-none d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-twitter fa-2x me-2"></i> Twitter
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="https://www.instagram.com/"
+                                    class="text-white text-decoration-none d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-instagram fa-2x me-2"></i> Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 text-center">
+                        <!-- hado rawbit mazal ghan3dlo 3lihom -->
+                        <h5>Liens utiles</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                            <li class="nav-item dropdown mx-4">
+                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    les groups
+                                </a>
+                                <ul class="dropdown-menu" style="background-image: url(emage/green4.webp);">
+                                    <li><a class="drop dropdown-item text-light" href="group1.html">group 1</a></li>
+                                    <li><a class="drop dropdown-item" href="group2.html"
+                                            style="color: whitesmoke;">group
+                                            2</a></li>
+                                    <li><a class="drop dropdown-item" href="group3.html"
+                                            style="color: rgb(255, 255, 255);">group 3</a></li>
+                                    <li><a class="drop dropdown-item" href="group4.html"
+                                            style="color: whitesmoke;">group
+                                            4</a></li>
+                                    <li><a class="drop dropdown-item" href="group5.html"
+                                            style="color: whitesmoke;">group
+                                            5</a></li>
+                                    <li><a class="drop dropdown-item" href="group6.html"
+                                            style="color: whitesmoke;">group
+                                            6</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="drop dropdown-item text-light" href="index.html">Something else
+                                            here</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p>© 2025 Football Maroc. Tous droits réservés.</p>
+                        <p>
+                            <a href="#" class="text-light text-decoration-none">Conditions d'utilisation</a> |
+                            <a href="#" class="text-light text-decoration-none">Politique de confidentialité</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+        <!-- Modal tachkila 1-->
+        <div style="position: relative; top: 300px; z-index: 1500;">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body bg-darck" style="background-image: url(emage/back-group.jpg);">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <img style="width: 400px;" src="emage/khota 1.png" alt="">
+                        </div>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal tachkila 2-->
+        <div style="position: relative; top: 300px; z-index: 1500;">
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body bg-darck" style="background-image: url(emage/back-group.jpg);">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <img style="width: 400px;" src="emage/khota 2.png" alt="">
+                        </div>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal tirane 1-->
+        <div style="position: relative; top: 300px; z-index: 1500;">
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body bg-darck" style="background-image: url(emage/back-group.jpg);">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">TIRANE MOHAMMED AL KHAMISE
+                                    <a
+                                        href="https://www.google.com/maps/place/Mohammed+V+Stadium/@33.5828376,-7.6487405,18.25z/data=!4m6!3m5!1s0xda7d2e77f3d8aaf:0x9169b10a83e53ab!8m2!3d33.5829258!4d-7.6471526!16zL20vMDZmNzgy?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D">
+                                        <img src="emage/map.png" alt=""> </a>
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <img class="w-100" src="emage/tiran1.jpg" alt="">
+                        </div>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal tirane 2-->
+        <div style="position: relative; top: 300px; z-index: 1500;">
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body bg-darck" style="background-image: url(emage/back-group.jpg);">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">TIRANE TANJA AL KBIRA <a
+                                        href="https://www.google.com/maps/place/Mohammed+V+Stadium/@33.5828376,-7.6487405,18.25z/data=!4m6!3m5!1s0xda7d2e77f3d8aaf:0x9169b10a83e53ab!8m2!3d33.5829258!4d-7.6471526!16zL20vMDZmNzgy?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"><img
+                                            src="emage/map.png" alt=""></a>
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <img class="w-100" src="emage/tiran2.jpg" alt="">
+                        </div>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>
