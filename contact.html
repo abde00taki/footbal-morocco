@@ -7,10 +7,10 @@
     <title>contact</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 
     <style>
+        
         .drapou:hover {
             transform: scale(1.1);
         }
@@ -24,13 +24,21 @@
         .dropdown-menu li .drop:hover {
             background-color: rgb(108, 165, 42);
         }
+
+        /* style de forms */
+        .forms {
+            align-items: center;
+            width: 50%;
+        }
     </style>
 </head>
 
-<body style="background-image: url(emage/back-contact1.png);">
+<body style="background: linear-gradient(to right,rgba(119, 223, 119, 0.377) 65% , rgba(0, 139, 0, 0.712));">
+
     <!-- hada nav bar -->
-    <div class="top-bar " style=" transition: top 0.3s; ">
-        <nav class="navbar navbar-expand-lg  bg-success" style="position: fixed; width: 100%; z-index: 1500;">
+    <div class="top-bar" style=" transition: top 0.3s; ">
+        <nav class="navbar navbar-expand-lg  bg-success"
+            style="position: fixed; width: 100%; z-index: 1500; top: -8px;">
             <div>
                 <img src="emage/cup2.png" alt="">
             </div>
@@ -44,7 +52,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mx-4 mb-2 mb-lg-0">
                         <li class="nav-item mx-4">
-                            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active text-light" aria-current="page" href="index.html">Accuce</a>
                         </li>
                         <li class="nav-item mx-4">
                             <a class="nav-link text-light" href="contact.html">Contact</a>
@@ -69,40 +77,31 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="drop dropdown-item text-light" href="index.html">Something else here</a>
-                                </li>
+
                             </ul>
                         </li>
 
                     </ul>
 
-                    <button class="btn btn-light" type="submit" style="width: 120px;">Search</button>
+                    <button class="btn btn-light" type="submit" style="width: 120px; " data-bs-toggle="modal"
+                        data-bs-target="#exampleModalA">Rejoinds</button>
 
                 </div>
             </div>
         </nav>
     </div>
 
-    <style>
-        .forms {
-            align-items: center;
-            width: 50%;
-            /* position: relative; */
-            /* top: 300px; */
 
-        }
-    </style>
 
-    <!-- hadi twira dyal lmochaji3in -->
 
     <!-- hado li forms dyal contact -->
 
 
     <div class="d-flex justify-content-center">
         <!-- hadi li3dlt -->
-        <div class="align-self-center" style="width: 50% ; position: relative; top: 100px;">
-            <form class="text-light" name="validationforms" onsubmit="return validateForms() "
-                style="border: 2px solid rgb(233, 233, 233); border-radius: 15px; padding: 20px; top: 300px; background-image: url(emage/back-contact3.jpg); box-shadow: 0 0 20px black;">
+        <div class="align-self-center" style="width: 50% ; position: relative; top: 100px; ">
+            <form name="validationforms" onsubmit="return validateForms() "
+                style="border: 2px solid rgb(233, 233, 233); border-radius: 15px; padding: 20px; top: 300px; box-shadow: -10px 20px 20px black; background-color: white;">
 
                 <div class="row ">
                     <div class="col-md">
@@ -138,11 +137,7 @@
                         <input class="form-control" type="email" name="email" id="email" placeholder="entrer email" />
                     </div>
                 </div>
-                <!-- hada le missage -->
-                <div>
-                    <label>message</label>
-                    <textarea class="w-100" rows="8" name="" id="" placeholder="entrer un message "></textarea>
-                </div>
+
 
                 <!-- hada howa alert 2 li kay afechi lina lmissage -->
                 <div class="row mt-3">
@@ -154,13 +149,17 @@
                     </div>
                 </div>
 
-
+                <!-- hada le missage -->
+                <div>
+                    <label>message</label>
+                    <textarea class="w-100" rows="8" name="" id="" placeholder="entrer un message "></textarea>
+                </div>
 
 
 
                 <div class="text-end mt-3">
 
-                   
+
                     <button class="btn btn-success" type="submit">Envoyer</button>
                 </div>
 
@@ -215,7 +214,7 @@
                     <!-- hado rawbit mazal ghan3dlo 3lihom -->
                     <h5>Liens utiles</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>                        
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
                         <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
                         <li class="nav-item dropdown mx-4">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button"
@@ -237,8 +236,7 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="drop dropdown-item text-light" href="index.html">Something else here</a>
-                                </li>
+
                             </ul>
                         </li>
 
@@ -255,6 +253,58 @@
             </div>
         </div>
     </footer>
+
+    <!-- hada lmodal dyal rejoind -->
+
+    <div class="position-relative" style="z-index: 1500;">
+        <div class="modal fade" id="exampleModalA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body ">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Rejoindre</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-md">
+                                    <label for="nom">Nom</label>
+                                    <input class="form-control" type="text" id="nom" required
+                                        placeholder="Entrez le nom">
+                                </div>
+                                <div class="col-md">
+                                    <label for="prenom">Prénom</label>
+                                    <input class="form-control" type="text" id="prenom" required
+                                        placeholder="Entrez le prénom">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md">
+                                    <label for="password">Mot de passe</label>
+                                    <input class="form-control" type="password" id="password" required
+                                        placeholder="Exemple : ijkhut2Bhguo$">
+                                </div>
+                                <div class="col-md">
+                                    <label for="email">Email</label>
+                                    <input class="form-control" type="email" id="email" required
+                                        placeholder="exemple@etude.com">
+                                </div>
+                            </div>
+                            <div class="form-check mt-4">
+                                <input class="form-check-input" type="checkbox" id="agree" required>
+                                <label class="form-check-label" for="agree">Notification</label>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                <button type="submit" class="btn btn-success">Enregistrer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
